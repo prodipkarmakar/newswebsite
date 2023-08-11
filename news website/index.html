@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo flex">
+                <img src="assets\DAILY.png" alt="company-logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="latest" onclick="onNavItemClick('latest')">Latest</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+                    <li class="hover-link nav-item" id="entertainment" onclick="onNavItemClick('entertainment')">Entertainment</li>
+                    <li class="hover-link nav-item" id="business" onclick="onNavItemClick('business')">Business</li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+                <button id="search-button" class="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+        </div>
+    </main>
+<template id="template-news-card">
+    <div class="card">
+        <div class="card-header">
+            <img src="https://via.placeholder.com/400x200" alt="news-img" id="news-img">
+        </div>
+        <div class="card-content">
+            <h3 id="news-title">This is the title</h3>
+            <h6 id="news-source" class="news-source">End gadget 30/6/2023</h6>
+            <p id="news-desc" class="news-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, harum eligendi deserunt odio minima tempore voluptatum optio veritatis quod nostrum error dolor consequatur, accusamus ut nobis ab, dolore porro sapiente!</p>
+        </div>
+    </div>
+</template>
+    <script src="script.js"></script>
+</body>
+
+</html>
