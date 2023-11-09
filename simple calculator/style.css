@@ -1,0 +1,19 @@
+#container{
+    border: 2px solid blue;
+    height: 298px;
+    width: 231px;
+    margin: auto;
+}
+
+#display{
+    height: 60px;
+    width: 209px;
+    margin: 7px;
+    padding: 3px;
+}
+
+.btn{
+    height: 40px;
+    width: 40px;
+    margin: 7px;
+}
